@@ -120,7 +120,7 @@ public:
         sizePolicy1.setHeightForWidth(btnConfig->sizePolicy().hasHeightForWidth());
         btnConfig->setSizePolicy(sizePolicy1);
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/image/main_config.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/image/main_help.png"), QSize(), QIcon::Normal, QIcon::Off);
         btnConfig->setIcon(icon1);
         btnConfig->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 

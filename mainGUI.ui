@@ -130,7 +130,7 @@
            </property>
            <property name="icon">
             <iconset resource="main.qrc">
-             <normaloff>:/image/main_config.png</normaloff>:/image/main_config.png</iconset>
+             <normaloff>:/image/main_help.png</normaloff>:/image/main_help.png</iconset>
            </property>
            <property name="toolButtonStyle">
             <enum>Qt::ToolButtonTextUnderIcon</enum>

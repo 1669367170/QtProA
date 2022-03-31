@@ -24,6 +24,11 @@ find_package(Qt5 REQUIRED
         Core
         Gui)
 
+set(QRC_SOURCE_FILES main.qrc)
+list(APPEND ${QRC_SOURCE_FILES} qss.qrc)
+# 添加*.qrc资源文件
+qt5_add_resources(QRC_FILES ${QRC_SOURCE_FILES})
+
 #if (Qt5_FOUND)
 #    message(${PROJECT_NAME}, " Qt5_FOUND!")
 #else (Qt5_FOUND)
@@ -34,7 +39,7 @@ add_subdirectory("./src/GUI")
 
 aux_source_directory(. SRC_LIST)
 list(APPEND SRC_LIST main.cpp)
-add_executable(${PROJECT_NAME} ${SRC_LIST})
+add_executable(${PROJECT_NAME} ${SRC_LIST} ${QRC_FILES})
 
 ## 将对应Qt模块的库链接进程序（添加的模块即Qt"*.pro"文件中的Qt+=Module）
 #target_link_libraries(${PROJECT_NAME}
